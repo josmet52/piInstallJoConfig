@@ -45,10 +45,10 @@ sudo pip3 install dropbox
 echo
 
 echo install matplotlib
-#git clone https://github.com/matplotlib/matplotlib
+git clone https://github.com/matplotlib/matplotlib
 cd matplotlib
-#python3 setup.py build
-#sudo python3 setup.py install
+python3 setup.py build
+sudo python3 setup.py install
 echo
 
 echo import jo projects from github
