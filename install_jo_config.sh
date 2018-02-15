@@ -74,7 +74,7 @@ echo install gnome-schedule
 sudo apt-get -y install gnome-schedule
 echo
 
-echo install cups (printer queue)
+echo install cups printer queue
 sudo apt-get -y install cups
 sudo usermod -a -G lpadmin pi
 sudo adduser pi lp
@@ -82,13 +82,19 @@ echo
 
 echo dernières mises à jour
 sudo apt-get update
+echo
+
 sudo apt-get -y upgrade
+echo
+
 sudo apt-get -y dist-upgrade
+echo
+
 sudo apt-get -y autoremove
 echo
 
 echo installation à la mode jo terminée
-echo pour installer l'imprimante lancer l'explorer avec l'adresse
+echo pour installer l imprimante lancer l'explorer avec l'adresse
 echo 127.0.0.1:631 
 echo
 
