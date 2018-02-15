@@ -94,7 +94,7 @@ sudo apt-get -y autoremove
 echo
 
 echo installation à la mode jo terminée
-echo pour installer l imprimante lancer l'explorer avec l'adresse
+echo pour installer l imprimante lancer l'explorer avec l adresse
 echo 127.0.0.1:631 
 echo
 
