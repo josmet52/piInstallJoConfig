@@ -1,35 +1,35 @@
 #!/bin/bash
+
 echo install mysql
-echo
-sudo apt-get -o install mysql-server
-sudo apt-get -o install mysql-client
-sudo apt-get -o install python-mysqldb
+sudo apt-get install mysql-server
+sudo apt-get install mysql-client
+sudo apt-get install python-mysqldb
 echo
 
-#sudo apt-get -o install screen
+#sudo apt-get install screen
 
 echo install python-wxgtk2.8
-sudo apt-get -o install python-wxgtk2.8
+sudo apt-get install python-wxgtk2.8
 echo
 
 echo install python-opencv
-sudo apt-get -o install python-opencv
+sudo apt-get install python-opencv
 echo
 
 echo install python-libxml2-dev
-sudo apt-get -o install libxml2-dev
+sudo apt-get install libxml2-dev
 echo
 
 echo install python-libxlst1-dev
-sudo apt-get -o install libxslt1-dev
+sudo apt-get install libxslt1-dev
 echo
 
 echo install python-pandas
-sudo apt-get -o install python-pandas
+sudo apt-get install python-pandas
 echo
 
 echo install python-pymysql
-sudo apt-get -o install python3-pymysql
+sudo apt-get install python3-pymysql
 echo
 
 echo install python3-mysqlclient
@@ -61,6 +61,13 @@ cd ..
 echo
 
 echo configure mysql
-sh /home/pi/Documents/projets_jo/install_jo_config/configure_mysql.sh
+#sh /home/pi/Documents/projets_jo/piInstallJoConfig/configure_mysql.sh
+
+sudo mysql -u root -e "SET PASSWORD FOR root@localhost = PASSWORD('mablonde');"
+sudo mysql -u root -pmablonde -e "DROP USER IF EXISTS pi@localhost;"
+sudo mysql -u root -pmablonde -e "CREATE USER pi@localhost IDENTIFIED BY 'mablonde';"
+sudo mysql -u root -pmablonde -e "GRANT ALL PRIVILEGES ON *.* TO pi@localhost;"
+sudo mysql -u root -pmablonde -e "CREATE DATABASE tlogger;"
+sudo mysql -u root -pmablonde < /home/pi/Documents/projets_jo/tempLogger/mysql/create_users_db_and_tables.sql
 
 
