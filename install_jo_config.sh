@@ -45,19 +45,19 @@ sudo pip3 install dropbox
 echo
 
 echo install matplotlib
-git clone https://github.com/matplotlib/matplotlib
+#git clone https://github.com/matplotlib/matplotlib
 cd matplotlib
-python3 setup.py build
-sudo python3 setup.py install
+#python3 setup.py build
+#sudo python3 setup.py install
 echo
 
 echo import jo projects from github
-cd ..
+cd /home/pi/Documents
 mkdir projets_jo
 cd projets_jo
 git clone https://github.com/josmet52/tempLogger
 git clone https://github.com/josmet52/inconfortMetre
-cd ..
+cd /
 echo
 
 echo configure mysql
