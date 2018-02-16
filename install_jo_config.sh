@@ -49,6 +49,8 @@ git clone https://github.com/matplotlib/matplotlib
 cd matplotlib
 python3 setup.py build
 sudo python3 setup.py install
+cd ..
+rm /Rf matplotlib
 echo
 
 echo import jo projects from github
@@ -69,6 +71,7 @@ sudo mysql -u root -pmablonde -e "CREATE USER pi@localhost IDENTIFIED BY 'mablon
 sudo mysql -u root -pmablonde -e "GRANT ALL PRIVILEGES ON *.* TO pi@localhost;"
 sudo mysql -u root -pmablonde -e "CREATE DATABASE tlogger;"
 sudo mysql -u root -pmablonde < /home/pi/Documents/projets_jo/tempLogger/mysql/create_users_db_and_tables.sql
+echo
 
 echo install gnome-schedule
 sudo apt-get -y install gnome-schedule
@@ -94,7 +97,7 @@ sudo apt-get -y autoremove
 echo
 
 echo installation à la mode jo terminée
-echo pour installer l imprimante lancer l'explorer avec l adresse
+echo pour installer l imprimante lancer l explorer avec l adresse
 echo 127.0.0.1:631 
 echo
 
