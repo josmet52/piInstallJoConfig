@@ -88,7 +88,7 @@ echo
 sudo apt-get -y upgrade
 echo
 
-sudo apt-get -y dist-upgrade
+# sudo apt-get -y dist-upgrade
 echo
 
 sudo apt-get -y autoremove
@@ -100,6 +100,5 @@ echo pour installer une imprimante lancer Chromium puis
 echo atteindre le site 127.0.0.1:631
 echo suivre les instructions
 echo
-
 
 
