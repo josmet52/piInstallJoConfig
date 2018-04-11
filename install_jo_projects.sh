@@ -24,13 +24,6 @@ cd /
 echo
 
 echo
-echo ----- import pi_install-----
-echo
-git clone https://github.com/josmet52/pi_install
-cd /
-echo
-
-echo
 echo ----- installation à la mode jo terminée -----
 echo
 
