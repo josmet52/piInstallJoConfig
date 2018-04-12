@@ -1,4 +1,5 @@
 ﻿#!/bin/bash
+
 echo ----- install mysql -----
 echo
 
