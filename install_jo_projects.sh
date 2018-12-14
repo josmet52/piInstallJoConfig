@@ -17,6 +17,11 @@ echo
 git clone https://github.com/josmet52/inconfortMetre
 
 echo
+echo ----- import shakeMesure -----
+echo
+git clone https://github.com/josmet52/shakeMesure
+
+echo
 echo ----- import gphoto2-----
 echo
 git clone https://github.com/josmet52/gphoto2
