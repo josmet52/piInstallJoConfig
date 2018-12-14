@@ -36,9 +36,9 @@ echo install python3-mysqlclient
 sudo pip3 install mysqlclient
 echo
 
-echo install scikit-learn
-sudo pip3 install scikit-learn
-echo
+#echo install scikit-learn
+#sudo pip3 install scikit-learn
+#echo
 
 echo install dropbox
 sudo pip3 install dropbox
